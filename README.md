@@ -46,3 +46,23 @@ Criamos uma migration para criar a tabela Users e a rodamos utilizando comandos 
 Entao criamos um controller afim de isolar as regras relativas as interações com o User. O typeorm vem com o metodo getRepository que pega o repositorio da classe passada como argumento(não há necessidade de inicializar o repositorio?), além de vir com o metodo findOne
 por padrão.
 
+## Dia 3
+
+O dia começa com a criação de repositórios, que extendem a classe Repository com o tipo
+do model(lembra spring data). Criamos toda a parte do surveys(model,controller,repository) também.
+
+Tivemos uma breve introdução aos diferentes tipos de testes
+
+* Testes unitários
+
+* Testes de integração
+
+* Testes de ponta a ponta
+
+E criamos testes de integração para testar as funcionalidades da aplicação até o momento,
+como criação de usuarios/criação de surveys/listagem de surveys.
+
+Também vimos a utilização de variaveis de ambiente, para poder alternar o banco de dados uti
+lizado em ambiente de desenvolvimento e ambiente de testes.
+
+
