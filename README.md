@@ -65,4 +65,15 @@ como criação de usuarios/criação de surveys/listagem de surveys.
 Também vimos a utilização de variaveis de ambiente, para poder alternar o banco de dados uti
 lizado em ambiente de desenvolvimento e ambiente de testes.
 
+## Dia 4
+
+O dia começa com a criação da tabela pivot surveyUsers(migrations,model,repository) que
+guarda os ids do usuario e da survey criados após o envio do email(como foreign keys).
+
+
+Então foi criado o serviço para envio de email, utilizando o nodemailer para envio, handlebars para formatação do email a ser enviado, além de algumas features do proprio node
+como fs. 
+
+
+O controller responsavel por enviar emails realiza verificações caso usuario já tenha recebido a survey e por fim envia o email.
 
