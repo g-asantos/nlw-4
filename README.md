@@ -77,3 +77,16 @@ como fs.
 
 O controller responsavel por enviar emails realiza verificações caso usuario já tenha recebido a survey e por fim envia o email.
 
+## Dia 5
+
+
+O dia começa com a refatoração do SendMailController. Então começamos a implementar a feature que calcula o NPS e o envia devolta, de acordo com os resultados das surveys.
+
+Criamos um controller para salvar as respostas do usuário as surveys que anteriormente eram salvas apenas como null e não podiam ser mudadas.
+
+Enfim criamos o controller responsável pelo calculo do NPS, que pega todos as surveys e dependendo da nota, separa entre detractors, passives e promoters.
+
+Por fim, criamos inumeras validações, como validar se o usuario existe no userController, verificar se o valor da survey não é null no npsController, etc.
+
+Ainda implementamos um erro customizado que criamos, o AppError, e substituimos todos os erros criados anteriormente por ele.
+
